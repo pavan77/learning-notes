@@ -1,0 +1,13 @@
+Concurrency key notes
+
+instruction reordering
+happens before gurantee
+Li cache, heap
+monitor objects 
+static synchronized
+dont use string constants for monitors
+synchronized blocks are reentrant
+synchronized visibility gurantees
+threadlocal and inheritablethreadlocal
+reentrantlock -> fairness -> Lock l = new ReentrantLock(true); 
+virtual thread
