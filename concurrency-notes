@@ -20,6 +20,10 @@ future.cacnel -> Thread.interrupt()
 invokeAll
 invokeAny
 
+shutdown
+shutdownNow
+awaitTermination
+
 
 blocking queue
 
