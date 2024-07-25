@@ -25,8 +25,13 @@ shutdownNow
 awaitTermination
 
 
-blocking queue
 
+deadlock
+simple 2 threads
+multiple threads circular wait
+
+blocking queue
+array blocking queue, linked, priorityblocking queue
 
 
 
