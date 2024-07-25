@@ -10,4 +10,20 @@ synchronized blocks are reentrant
 synchronized visibility gurantees
 threadlocal and inheritablethreadlocal
 reentrantlock -> fairness -> Lock l = new ReentrantLock(true); 
-virtual thread
+virtual thread -> java 19
+
+executor service -> 
+
+core size, max size, keep alive, blocking queue
+future.cacnel -> Thread.interrupt()
+
+invokeAll
+invokeAny
+
+
+blocking queue
+
+
+
+
+
