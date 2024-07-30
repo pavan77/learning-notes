@@ -1,0 +1,13 @@
+aws-iam
+1
+
+users
+groups 
+roles
+permissions
+
+
+2
+create a user, give programmatic access(u will get access key and security key), create policy and attach it to the user
+
+disable root account
