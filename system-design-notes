@@ -4,7 +4,7 @@ Indexing techniques:
 - They are basic hashmaps in memory. (NOT disk - as we need random hashmap access instantly and not seek it)
 - Thus limited by memory space, expensive
 - Fast reads and writes
-- Bad for range queries
+- Bad for range queries 
 - To add durability, we add WAL - write to disk as log (easy as pointer is always at the end) and then write to the hashmap
 
 2) B-Trees
