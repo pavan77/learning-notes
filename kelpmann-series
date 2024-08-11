@@ -4,4 +4,28 @@ charles proxy(http requests) , wireshark(tcp packets)
 
 rpc
 
-two generals problem
+two generals problem -> honest generals but unreliable messengers
+
+
+byzantine general problem -> reliable message, but corrupt generals
+
+
+all distributed algorithms should conform to the below
+
+   network -> reliable(perfect links), fair loss(packets will be dropped but on retry will succeed)
+    system -> crash-stop(device gone forever), crash-recovery(node comes up), byzantine nodes()
+
+
+
+Availability
+   99%of 365 days = down 3.7 days/year
+   99.9 = down 8.8 hours/year
+    99.99 = down 53 mins/year
+
+
+SLO SLA
+
+
+
+
+
