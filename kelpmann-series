@@ -13,7 +13,7 @@ byzantine general problem -> reliable message, but corrupt generals
 all distributed algorithms should conform to the below
 
    network -> reliable(perfect links), fair loss(packets will be dropped but on retry will succeed)
-    system -> crash-stop(device gone forever), crash-recovery(node comes up), byzantine nodes()
+    system -> crash-stop(device gone forever), crash-recovery(node comes up), byzantine nodes
 
 
 
@@ -24,6 +24,19 @@ Availability
 
 
 SLO SLA
+
+clocks are unreliable, NTP can turn the time back.. System.currentTimeMillis vs System.nanoTime()
+
+
+causal dependency
+a -> b, b-> c => a -> c
+
+logical time to represent order
+      Lamport clocks
+      Vector clocks
+
+
+
 
 
 
