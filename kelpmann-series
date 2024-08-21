@@ -37,6 +37,13 @@ logical time to represent order
 
 
 
+broadcast orderings
+  FIFO
+  causal
+  Total order
+
+
+
 
 
 
