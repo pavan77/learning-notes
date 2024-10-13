@@ -1,0 +1,32 @@
+It is a common mistake to assume that synchronization needs to be used only when writing to shared variables; this is
+simply not true. (The reasons for this will become clearer in Section 3.1.)
+
+
+  For each mutable state variable that may be accessed by more than one thread, all accesses to that variable must be
+performed with the same lock held. In this case, we say that the variable is guarded by that lock.
+
+  Every shared, mutable variable should be guarded by exactly one lock. Make it clear to maintainers which lock that is.
+
+  For every invariant that involves more than one variable, all the variables involved in that invariant must be guarded by
+the same lock.
+
+
+  It's the mutable state, stupid. [1]
+All concurrency issues boil down to coordinating access to mutable state. The less mutable state, the easier it is to
+ensure thread safety.
+• Make fields final unless they need to be mutable.
+• Immutable objects are automatically thread‐safe.
+Immutable objects simplify concurrent programming tremendously. They are simpler and safer, and can be shared
+freely without locking or defensive copying.
+• Encapsulation makes it practical to manage the complexity.
+70 Java Concurrency In Practice
+You could write a thread‐safe program with all data stored in global variables, but why would you want to?
+Encapsulating data within objects makes it easier to preserve their invariants; encapsulating synchronization within
+objects makes it easier to comply with their synchronization policy.
+• Guard each mutable variable with a lock.
+• Guard all variables in an invariant with the same lock.
+• Hold locks for the duration of compound actions.
+• A program that accesses a mutable variable from multiple threads without synchronization is a broken program.
+• Don't rely on clever reasoning about why you don't need to synchronize.
+• Include thread safety in the design processor explicitly document that your class is not thread‐safe.
+• Document your synchronization policy.
